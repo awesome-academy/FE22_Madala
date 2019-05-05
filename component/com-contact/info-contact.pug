@@ -1,0 +1,25 @@
+.contact-us.mt-4.mb-5
+    h3.text-uppercase.mb-3 Liên Hệ
+    .row
+        .col-lg-6.img-thumbnail
+            img.img-fluid(src="./images/ContactUs/about--map.jpg")
+        .col-lg-6.form--contact.mt-4.mt-lg-0
+            h6.text-uppercase.mb-4 Gữi email cho chúng tôi
+            form(action='#')
+                .form-group
+                    label(for='name-contact')
+                        | Tên
+                        span *
+                    input#name-contact.form-control(type='text')
+                .form-group
+                    label(for='email-contact')
+                        | Email
+                        span *
+                    input#email-contact.form-control(type='email')
+                .form-group
+                    label(for='messages')
+                        | Tin nhắn
+                        span *
+                    input#messages.form-control(type='text')
+                .wrap-button
+                    button.btn.btn-dark.text-uppercase.mt-3 Gữi

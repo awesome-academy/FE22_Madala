@@ -1,0 +1,23 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    include ./component/com-product/breadcrumb
+    // adv-img
+    img.product--adv.img-fluid(src='./images/Grid/adv.jpg', alt='adv')
+    // body content
+    .container.mt-5.mb-5
+        .body_product.row
+            // body product sidebar
+            .body_product--sidebar.col-lg-4
+                include ./component/com-product/product-category
+
+                include ./component/com-product/product-compare
+
+                include ./component/com-product/product-tag
+
+                include ./component/com-product/product-adv
+            // body product content
+            .body_product--content.col-lg-8.mt-4.mt-lg-0
+                include ./component/com-product/list-item

@@ -1,0 +1,11 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    .container
+        // breadcrumb
+        .container.mt-3
+            include ./component/com-about/breadcrumb-about
+
+            include ./component/com-about/info-about

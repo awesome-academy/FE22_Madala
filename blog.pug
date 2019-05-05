@@ -1,0 +1,14 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    .container
+        include ./component/com-product/breadcrumb
+
+    .container.mt-3.mb-5.pl-4
+        h3 BLOG
+        .body_product--content.mt-4.mt-lg-0
+            include ./component/com-blog/show-pag
+
+            include ./component/com-blog/list-blog

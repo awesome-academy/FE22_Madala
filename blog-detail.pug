@@ -1,0 +1,22 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    .container
+        include ./component/com-product/breadcrumb
+
+    .container.mt-3.mb-5.pl-4
+        .row
+            .blog_detail--sidebar.col-lg-3
+                h3.text-uppercase.mb-lg-4 Blog
+
+                include ./component/com-blogDetail/news-post
+                .product--tag.mt-5
+                    h5.text-uppercase.product--title.pb-3 blog tags
+                    include ./component/com-blogDetail/tag-blog-detail
+                .product--adv--sub.mt-4
+                    h5.text-uppercase.product--title.pb-3 last video
+                    img.img-fluid.w-100(src='./images/BlogDetail/blog_video.jpg', alt='product')
+            .blog--content.page_blog--content.mt-4.mt-lg-0.col-lg-9
+                include ./component/com-blogDetail/content-blog-detail

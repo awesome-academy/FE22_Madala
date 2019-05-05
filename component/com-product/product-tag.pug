@@ -1,0 +1,12 @@
+include ./variable-data
+
+mixin productTag(content)
+    h5
+        span.badge.badge-secondary.p-2.mb-2.ml-2= content
+
+// product tag
+.product--tag.mt-5
+    h5.text-uppercase.product--title.pb-3 Tag sản phẩm
+    .product_item--tag.mt-5
+        for tag in tags
+            + productTag(tag)

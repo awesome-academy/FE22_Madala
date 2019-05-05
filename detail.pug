@@ -1,0 +1,23 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    // SlideShow
+    .container
+        include ./component/com-product/breadcrumb
+
+        .detail_info--main.row.mt-lg-5.mb-lg-5
+            include ./component/com-detail/image-detail
+
+            include ./component/com-detail/info-detail
+
+        .row.detail_info--body
+            include ./component/com-detail/tag-detail
+
+            // Info Further
+            .col-lg-4.info--further
+                include ./component/com-detail/sale-hot
+
+                include ./component/com-detail/buy-hot
+

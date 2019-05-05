@@ -1,0 +1,32 @@
+include ./variable-data
+
+footer.container-fluid.p-4.pt-5
+    .container
+        .overview--info
+            .overview--item.pb-4
+                h5.pb-4 Liên hệ với chúng tôi
+                p
+                    img(src='./images/HOME/mark.png', alt='mark')
+                    |  Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, p.Cống Vị, Q.Ba Đình, Hà Nội
+                span
+                    img(src='./images/HOME/telephone.png', alt='phone')
+                    |  (04) 6674 2332 &nbsp;-&nbsp;
+                    img(src='./images/HOME/fax.png', alt='fax')
+                    |  (04) 3786 8904
+                br
+                span
+                    img(src='./images/HOME/telephone.png', alt='phone')
+                    |  (08) 6680 9686&nbsp;
+                    span
+                        img(src='./images/HOME/mail.png', alt='mail')
+                        i &nbsp;Support@bizweb.vn
+            for obj in arrObjFooter
+                .overview--item.pb-4.pt-4
+                    h5.pb-4= obj.title
+                    ul.pl-0
+                        for content in obj.contents
+                            li
+                                a(href='#')= content
+        .further-info.pt-4
+            span &copy; Copyright 2008-2014 DKT Technology JSC
+            img.float-lg-right(src='./images/HOME/logo_pay.png', alt='Pay logo')

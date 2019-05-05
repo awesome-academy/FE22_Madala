@@ -1,0 +1,17 @@
+include ./variable-data
+
+mixin panelItem(contents)
+    .panel
+        ul
+            for content in contents
+                li= content
+
+// product category
+.product--category
+    h5.text-uppercase.product--title.pb-3
+        i.fa.fa-bars
+        |  &nbsp; Danh mục sản phẩm
+    #accordion
+        for dMuc in arrDanhMucs
+            button.accordion.text-uppercase= dMuc.title
+            + panelItem(dMuc.contents)

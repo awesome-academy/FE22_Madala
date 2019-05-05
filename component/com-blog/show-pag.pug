@@ -1,0 +1,19 @@
+include ./variable-data
+
+#btnContainer.btnContainer
+    button#grid.custom--btn.custom--active
+        i.fa.fa-th-large
+    button#list.custom--btn
+        i.fas.fa-list
+    .pagination.float-right.text-center
+        ul
+            li
+                a(href='#')
+                    i.fas.fa-caret-left
+            for pContent in arrPaContent
+                li
+                    a(href='#')
+                        = pContent
+            li
+                a(href='#')
+                    i.fas.fa-caret-right

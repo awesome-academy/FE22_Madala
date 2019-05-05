@@ -1,0 +1,33 @@
+.form--signup.mt-4.mb-5
+    h3.text-uppercase Đăng ký
+    form.mt-4.p-5
+        h5.text-uppercase Thông tin cá nhân
+        .form-group
+            label(for='firstName') Tên trước *
+            input#firstName.form-control(type='text', required)
+        .form-group
+            label(for='lastName') Tên sau *
+            input#lastName.form-control(type='text', required)
+        .form-group
+            label(for='email') Email *
+            input#email.form-control(type='email', required)
+        .form-group
+            label(for='passWord') Password *
+            input#passWord.form-control(type='password', required)
+        .form-check
+            label.form-check-label
+                input.form-check-input(type='checkbox')
+                |  Đăng ký nhận bản tin
+
+        h5.text-uppercase.mt-5 Thông tin đăng nhập
+        .form-group
+            label(for='mk') Mật khẩu *
+            input#mk.form-control(type='password', required)
+        .form-group
+            label(for='confirmMK') Xác nhận mật khẩu *
+            input#confirmMK.form-control(type='password', required)
+        .button--sign-up
+            .btn.btn-dark Gữi
+            .btn.btn-dark
+                img(src='./images/reply.jpg')
+                | &nbsp;Quay lại

@@ -1,0 +1,13 @@
+.row_detail--custom.col-lg-6.col-12
+    .category_detail.mr-2
+        a.prev(onclick='plusSlides(-1)')
+            img.img-fluid(src='./images/Detail/arrow-up.png', alt='Up')
+        each num in [1, 2, 3, 4]
+            .img-thumbnail_detail--custom.mt-3
+                img.demo.cursor.img-fluid(src='./images/Detail/product_sub--'+num+'.jpg', data-show=''+num+'', onclick='currentSlide('+num+')')
+        a.next(onclick='plusSlides(1)')
+            img.img-fluid(src='./images/Detail/arrow-down.png', alt='Down')
+    .column.show--item
+        each num in [1, 2, 3, 4]
+            .mySlides.ml-md-5.ml-lg-0
+                img.img-fluid(src='./images/Detail/product--primary.jpg')

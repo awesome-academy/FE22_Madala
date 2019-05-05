@@ -1,0 +1,50 @@
+include ./variable-data
+
+mixin productItemList(path, title)
+    .item
+        .img-thumbnail
+            img.img-fluid.p-4(src=''+path+'', alt='product 1')
+        .product_item--info.text-center.mt-3
+            .product--info--grid
+                h6= title
+                h3.mb-4 Mỹ phẩm châu Âu
+                .product--price.mb-3
+                    span
+                        | 355.000
+                        sup đ
+                .product--btn--buy.pb-3
+                    button.btn.btn-custom Mua hàng
+                    button.btn.btn-custom.ml-1
+                        img(src='./images/HOME/heart.png', alt='heart')
+                    button.btn.btn-custom.ml-1
+                        img(src='./images/HOME/reload.png', alt='reload')
+            .product--info--list
+                h3.pb-2 Mỹ phẩm châu âu thương hiệu hàng đầu thế giới
+                .rating--like
+                    span
+                        i.fas.fa-heart
+                        i.fas.fa-heart
+                        i.fas.fa-heart
+                        i.fas.fa-heart
+                        i.fas.fa-heart
+                        |  ( 4 Lượt mua )
+                    p.pt-2
+                        | Tự hào được ghi là năm mà Tiffany & Co là thành lập, bộ sưu tập mang tính
+                        | biểu tượng này cung cấp cho một cái gật đầu với qua trong khí thể hiện một
+                        | cảm giác hiện đại với kiểu dáng đẹp đường cong và đường nét mượt mà
+                    .product--price.mb-3
+                        span
+                            | 355.000
+                            sup đ
+                    .product--btn--buy.pb-3
+                        button.btn.btn-custom Mua hàng
+                        button.btn.btn-custom.ml-1
+                            img(src='./images/HOME/heart.png', alt='heart')
+                        button.btn.btn-custom.ml-1
+                            img(src='./images/HOME/reload.png', alt='reload')
+
+include ../com-blog/show-pag
+
+.product_list--item
+    for item in items
+        + productItemList(item.path, item.title)
