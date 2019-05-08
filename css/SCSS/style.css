@@ -356,7 +356,7 @@ body .line--img {
   justify-content: center;
 }
 body .line--img img {
-  width: 80%;
+  width: 40%;
 }
 body .product--hot .info--select {
   display: grid;
@@ -1221,6 +1221,7 @@ body .blog_detail--sidebar {
     grid-template-columns: 10% 90%;
   }
   body .blog--comment .wrap-button button {
+    width: -moz-fit-content;
     width: fit-content;
     grid-column: 2 /3;
   }
@@ -1296,7 +1297,8 @@ body .table-bordered td:nth-child(3), body .table-bordered td:nth-child(5) {
 }
 @media (max-width: 576px) {
   body .table-bordered td .table--item.content--cart {
-    top: 0 !important;
+    position: static;
+    transform: translateX(0);
   }
 }
 body .account--page h4, body .account--page h5 {
@@ -1333,12 +1335,9 @@ body .breadcrumb--account .breadcrumb .breadcrumb-item.active {
 body .breadcrumb--account .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   color: #c72527;
 }
-@media (max-width: 750px) {
-  body .account--table .table-bordered td .table--item {
-    position: static;
-    left: 0;
-    transform: translateX(0);
-  }
+body .account--table .table-bordered td .table--item {
+  position: static;
+  transform: translateX(0);
 }
 body .form--signup form {
   font-size: 0.8rem;

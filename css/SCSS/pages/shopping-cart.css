@@ -1,0 +1,40 @@
+.cart--table {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+  .cart--table .cart_btn .btn {
+    font-size: .9rem;
+    background-color: black;
+    color: white;
+    border-radius: 0;
+    border: none;
+    cursor: pointer; }
+    .cart--table .cart_btn .btn:last-child {
+      background-color: #789629; }
+
+.table-bordered thead tr {
+  background-color: #fafafa; }
+.table-bordered tr th {
+  font-family: "myriapro", sans-serif; }
+  .table-bordered tr th:nth-child(1) {
+    width: 199px; }
+.table-bordered td {
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative; }
+  .table-bordered td .table--item {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .table-bordered td .table--item > input {
+    width: 30px; }
+  .table-bordered td:nth-child(3), .table-bordered td:nth-child(5) {
+    font-family: "Lobster", cursive; }
+
+@media (max-width: 576px) {
+  .table-bordered td .table--item.content--cart {
+    position: static;
+    transform: translateX(0); } }
+
+/*# sourceMappingURL=shopping-cart.css.map */

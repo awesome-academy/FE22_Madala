@@ -16,7 +16,7 @@ mixin tabItemDetail(path)
     ul.nav.nav-pills(role='tablist')
         for tabName in tabNames
             li.nav-item
-                a.nav-link.active.p-0.text-uppercase(data-toggle='pill', href='#home')= tabName
+                a.nav-link.active.pr-2.text-uppercase(data-toggle='pill', href='#home')= tabName
     // Tab panes
     .tab-content.mt-5
         #home.container.tab-pane.active.p-0

@@ -62,7 +62,8 @@
   .table-bordered {
     td {
       .table--item.content--cart {
-        top: 0!important;
+        position: static;
+        transform: translateX(0);
       }
     }
   }
