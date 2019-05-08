@@ -1,0 +1,25 @@
+include ./variable-data
+
+mixin blogContentList(path)
+    .blog--content.page_blog--content
+        .blog.pb-5.pb-sm-0
+            .img-thumbnail.p-0
+                img.img-fluid.w-100(src=''+path+'', alt='Blog Image')
+            .blog--content
+                h6.text-uppercase.title--content.mt-3 Review son kem Bourjois velvet
+                hr
+                p
+                    | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hăm
+                    | nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                    | Free để giải nhiệt.
+                a.link--content(href='#')
+                    i Bởi NamTran (27/05/2015)
+                hr
+                a.link--content(href='#')
+                    | Đọc thêm
+                    i.fas.fa-angle-right
+                a.link--content.float-right(href='#') 23 Bình luận
+
+.blog--show--item.mt-4
+    for data in arrData
+        + blogContentList(data)

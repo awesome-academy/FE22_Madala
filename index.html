@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Mandala</title>
+  <link rel="stylesheet" href="css/SCSS/style.css">
+  <link rel="stylesheet" href="css/CSSLib/bootstrap.min.css">
+  <link rel="stylesheet" href="css/CSSLib/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/CSSLib/owl.theme.default.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/CSSLib/font-extention.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<body>
+  <div class="modal" id="myModal">
+    <div class="pop-up_custom"><span class="close">&times;</span>
+      <div class="pop-up_body">
+        <h3 class="text-uppercase mb-3">Gửi Email</h3><span>Hãy gữi email của bạn liên hệ với chúng tôi để được tư vấn tốt nhất</span><span>Sự hài lòng của bạn là thành công của chúng tôi</span>
+        <input class="w-75 mt-4 mb-4" type="text" placeholder="Email của bạn..."><a class="text-uppercase" href="">Gữi email</a>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar section-->
+  <nav class="navbar navbar-expand-md fixed-top">
+    <!-- Footer-->
+    <!-- Navbar-item-->
+    <div class="container">
+      <!-- Brand--><a class="navbar-brand" href="#"><img src="./images/HOME/logo.png" alt=""></a>
+      <!-- Shopping cart and Search-->
+      <div class="img--tool" id="manager--tool--1">
+            <div class="cart dropdown pr-3 pr-md-1"><a href="#"><img class="mr-lg-3" src="./images/HOME/shoppoing-cart.png" alt=""></a>
+              <div class="dropdown-menu w-100">
+                <div class="cart_item">
+                  <!-- show detail item-->
+                  <div class="cart_item--sub">
+                    <!-- Item 1-->
+                    <div class="item--sub--sub mt-lg-1 pt-lg-1">
+                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
+                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
+                    </div>
+                    <!-- Item 1-->
+                    <div class="item--sub--sub mt-lg-1 pt-lg-1">
+                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
+                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- Total price in cart-->
+                  <div class="total--price"><span>Tổng số</span><span class="float-right">240.000<sup>đ</sup></span></div>
+                  <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button>
+                </div>
+              </div>
+            </div><a href="#"><img src="./images/HOME/btn-search.png" alt=""></a>
+      </div>
+      <!-- Toggler/collapsibe Button-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><i class="fa fa-bars"></i></button>
+      <!-- Navbar links-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#">TRANG CHỦ</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#">GIỚI THIỆU</a></li>
+          <li class="nav-item dropdown"><a class="nav-link text-uppercase" href="#">Sản phẩm</a>
+            <div class="dropdown-menu">
+              <div class="menu_item">
+                <!-- Item 1-->
+                <div class="menu_item--sub">
+                  <h6 class="text-dark text-uppercase">Dưỡng Da</h6>
+                  <hr>
+                  <ul class="pl-0">
+                    <li><a href="#">Áo khoác</a></li>
+                    <li><a href="#">Bộ áo liền quần</a></li>
+                    <li><a href="#">Dresses</a></li>
+                    <li><a href="#">Quần /Váy</a></li>
+                    <li><a href="#">Quần short</a></li>
+                    <li><a href="#">Quần jean</a></li>
+                    <li><a href="#">Đồ đan</a></li>
+                    <li><a href="#">Áo nỉ</a></li>
+                  </ul>
+                </div>
+                <!-- Item 1-->
+                <div class="menu_item--sub">
+                  <h6 class="text-dark text-uppercase">Nước Hoa</h6>
+                  <hr>
+                  <ul class="pl-0">
+                    <li><a href="#">Áo cánh /Áo sơ mi</a></li>
+                    <li><a href="#">Túi sách &amp; Balô</a></li>
+                    <li><a href="#">Khăn quàng cổ và Foulards</a></li>
+                    <li><a href="#">Dệt kim Hats &amp; Gloves</a></li>
+                    <li><a href="#">Vớ và Socks</a></li>
+                    <li><a href="#">Jewerly</a></li>
+                    <li><a href="#">Bị bảo vệ</a></li>
+                    <li><a href="#">Gày</a></li>
+                  </ul>
+                </div>
+                <!-- Item 1-->
+                <div class="menu_item--sub">
+                  <h6 class="text-dark text-uppercase">Trang sức</h6>
+                  <hr>
+                  <ul class="pl-0">
+                    <li><a href="#">Áo cánh /Áo sơ mi</a></li>
+                    <li><a href="#">Túi sách &amp; Balô</a></li>
+                    <li><a href="#">Khăn quàng cổ và Foulards</a></li>
+                    <li><a href="#">Dệt kim Hats &amp; Gloves</a></li>
+                    <li><a href="#">Vớ và Socks</a></li>
+                    <li><a href="#">Jewerly</a></li>
+                    <li><a href="#">Bị bảo vệ</a></li>
+                    <li><a href="#">Gày</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#">tin tức</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#">bản đồ</a></li>
+          <li class="nav-item"><a class="nav-link text-uppercase" href="#">liên hệ</a></li>
+        </ul>
+      </div>
+      <!-- Shopping cart and Search-->
+      <div class="img--tool" id="manager--tool--2">
+            <div class="cart dropdown pr-3 pr-md-1"><a href="#"><img class="mr-lg-3" src="./images/HOME/shoppoing-cart.png" alt=""></a>
+              <div class="dropdown-menu w-100">
+                <div class="cart_item">
+                  <!-- show detail item-->
+                  <div class="cart_item--sub">
+                    <!-- Item 1-->
+                    <div class="item--sub--sub mt-lg-1 pt-lg-1">
+                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
+                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
+                    </div>
+                    <!-- Item 1-->
+                    <div class="item--sub--sub mt-lg-1 pt-lg-1">
+                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
+                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
+                    </div>
+                  </div>
+                  <hr>
+                  <!-- Total price in cart-->
+                  <div class="total--price"><span>Tổng số</span><span class="float-right">240.000<sup>đ</sup></span></div>
+                  <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button>
+                </div>
+              </div>
+            </div><a href="#"><img src="./images/HOME/btn-search.png" alt=""></a>
+      </div>
+    </div>
+  </nav>
+  <!-- Banner-->
+  <section id="banner">
+    <div class="banner"><a class="text-uppercase" href="#">Mua hàng</a></div>
+  </section>
+  <!-- Content-->
+  <div class="container pt-md-5 pt-4">
+    <!-- Promotion-->
+    <div class="row" id="body--content">
+        <div class="col-md-4 pt-sm-4 pt-4 text-center box_info"><img src="./images/HOME/plane.png" alt="">
+          <p>Miễn Phí vận chuyển</p>
+        </div>
+        <div class="col-md-4 pt-sm-4 pt-4 text-center box_info"><img src="./images/HOME/gift.png" alt="">
+          <p>Nhận ngay quà tặng trị giá 350.000đ</p>
+        </div>
+        <div class="col-md-4 pt-sm-4 pt-4 text-center box_info"><img src="./images/HOME/star.png" alt="">
+          <p>Giảm 30% cho đơn hàng trên 5.000.000đ</p>
+        </div>
+    </div>
+    <!-- Info With Image-->
+    <div class="box_info--item pt-sm-4 pt-4 pb-3 row">
+      <!-- Row 1-->
+      <div class="box_info--item--1 pr-md-1 col-md-6 col-sm-12">
+        <div class="item--sub--1"><a href="#"><img class="img-fluid" src="./images/HOME/item-mother-1.png" alt=""></a></div>
+        <div class="item--sub--2 pt-md-2 pt-sm-2"><a href="#"><img class="img-fluid" src="./images/HOME/item-mother-2.png" alt=""></a></div>
+      </div>
+      <div class="box_info--item--2 pt-sm-2 pt-2 pt-md-0 pl-md-1 col-md-6 col-sm-12"><a href="#"><img class="img-fluid" src="./images/HOME/item_2--right--img.jpg" alt=""></a></div>
+      <!-- Row 2-->
+      <div class="box_info--item--2 pt-sm-2 pt-2 pr-md-1 col-md-6 col-sm-12"><a href="#"><img class="img-fluid" src="./images/HOME/Item_3--left--img.jpg" alt=""></a></div>
+      <div class="box_info--item--1 pt-sm-2 pt-2 pl-md-1 col-md-6 col-sm-12">
+        <div class="item--sub--1"><a href="#"><img class="img-fluid" src="./images/HOME/item-mother-3.png" alt=""></a></div>
+        <div class="item--sub--2 pt-md-2 pt-sm-2"><a href="#"><img class="img-fluid" src="./images/HOME/item-mother-4.png" alt=""></a></div>
+      </div>
+    </div>
+    <!-- FeedBack-->
+    <section class="pt-md-4 pb-md-5" id="feedback">
+      <div class="carousel slide" id="demo" data-ride="carousel">
+        <!-- Indicators-->
+        <ul class="carousel-indicators">
+          <li class="active" data-target="#demo" data-slide-to="0"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+        <!-- The slideshow-->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <div class="feedback--bg pb-lg-5 pb-3">
+                <p class="text-center text-md-left ml-md-2 mb-5">
+                  "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ
+                   đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với
+                   công nghệ cải tiến mới nhất, hảng Rohto"
+                </p>
+                <div class="feedback_info"><img class="mr-4 mr-md-0 img-fluid" src="./images/HOME/feedback_1--img.png" alt="">
+                  <div class="title">
+                    <h6 class="text-uppercase pr-lg-1">Tutile</h6><span>&nbsp;_&nbsp;</span><i>Giảm đốc phát trển sản phẩm</i>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <div class="feedback--bg pb-lg-5 pb-3">
+                <p class="text-center text-md-left ml-md-2 mb-5">
+                  "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ
+                   đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với
+                   công nghệ cải tiến mới nhất, hảng Rohto"
+                </p>
+                <div class="feedback_info"><img class="mr-4 mr-md-0 img-fluid" src="./images/HOME/feedback_2--img.png" alt="">
+                  <div class="title">
+                    <h6 class="text-uppercase pr-lg-1">Tutile</h6><span>&nbsp;_&nbsp;</span><i>Giảm đốc phát trển sản phẩm</i>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- HOT Product-->
+  <div class="container-fluid product--bg">
+    <div class="container">
+      <!-- Hot Product-->
+      <section class="product--hot pt-4 pb-4">
+        <div class="info--select text-md-center">
+          <h5>Sản phẩm mới</h5>
+          <h4>Sản phẩm bán chạy</h4>
+          <h5>Sản phẩm đặc biệt</h5>
+        </div>
+        <div class="line--img mt-2"><img class="img-fluid" src="./images/HOME/line.png" alt="Line"></div>
+        <div class="product--choice mt-3">
+          <div class="product_item--choice--1">
+            <ul class="tag-product">
+              <li><a href="#">Mỹ phẩm</a></li>
+              <li><a href="#">Chăm sóc da</a></li>
+              <li><a href="#">Dành cho tóc</a></li>
+            </ul>
+          </div>
+          <div class="product_item--choice--1 pl-md-3">
+            <ul class="tag-product">
+              <li><a href="#">Nước Hoa</a></li>
+              <li><a href="#">Trang sức</a></li>
+              <li class="mr-sm-5" id="last-child"><a href="#">Quà tặng</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- SlideShow-->
+    <div class="product--carousel owl-carousel owl-theme pb-3">
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_1.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>TYFFANY</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_2.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>OHUI</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_3.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>HOME</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_4.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>DEBORA</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_5.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>SARVON</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img-thumbnail"><img class="img-fluid p-4" src="./images/HOME/product_6.jpg" alt="product 1"></div>
+          <div class="product_item--info text-center mt-3">
+            <h6>TYFFANY</h6>
+              <h3 class="mb-4">Mỹ phẩm châu Âu</h3>
+              <div class="product--price mb-3"><span>355.000<sup>đ</sup></span><span>450.000<sup>đ</sup></span></div>
+              <div class="product--btn--buy pb-3">
+                <button class="btn btn-custom">Mua hàng</button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/heart.png" alt="heart"></button>
+                <button class="btn btn-custom ml-1"><img src="./images/HOME/reload.png" alt="reload"></button>
+              </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- Further Info-->
+  <div class="container further--info pb-5">
+    <div class="social-network pt-5">
+      <div class="social--carousel owl-carousel owl-theme pb-3">
+        <!-- Item 1-->
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-facebook-f"></i>&nbsp; Facebook</span></div>
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-twitter"></i>&nbsp; twitter</span></div>
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-instagram"></i>&nbsp; instagram</span></div>
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-google-plus-g"></i>&nbsp; google +</span></div>
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-pinterest-p"></i>&nbsp; pinterest</span></div>
+        <div class="item"><span class="text-center text-uppercase"><i class="fab fa-linkedin-in"></i>&nbsp; linkedin</span></div>
+      </div>
+    </div>
+    <div class="further--info--content pt-md-5">
+      <div class="about-us pt-5 pb-5 pt-sm-0 pb-sm-0">
+        <h5 class="text-uppercase text-center title--content">Về chúng tôi</h5>
+        <div class="line--img mb-4 mt-4"><img class="img-fluid" src="./images/HOME/line.png" alt="line"></div><img class="float-left" src="./images/HOME/logo.png" alt="logo">
+        <h6 class="text-uppercase pt-4 pb-3 title--content">Giới thiệu chung về mỹ phẩm Handmade Mandala</h6>
+        <p class="body--content">
+          Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+          cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+          Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+          cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+          Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+          cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+          Free để giải nhiệt.
+        </p><a class="link--content" href="#">Xem th&ecirc;m</a>
+      </div>
+      <div class="blog pb-5 pb-sm-0">
+        <h5 class="text-uppercase text-center title--content">blog</h5>
+        <div class="line--img mb-4 mt-4"><img class="img-fluid" src="./images/HOME/line.png" alt="line"></div>
+        <div class="img-thumbnail"><img class="img-fluid w-100" src="./images/Blog/blog_item--img2.png" alt="Blog Image"></div>
+        <div class="blog--content">
+          <h6 class="text-uppercase title--content">Review son kem Bourjois velvet</h6>
+          <hr>
+          <p>
+            Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hăm
+            nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+            Free để giải nhiệt.
+          </p><a class="link--content" href="#"><i>Bởi NamTran (27/05/2015)</i></a>
+          <hr><a class="link--content" href="#">Đọc thêm<i class="fas fa-angle-right"></i></a><a class="link--content float-right" href="#">23 Bình luận</a>
+        </div>
+      </div>
+      <div class="send-email pb-5 pb-sm-0">
+        <h5 class="text-uppercase text-center title--content">Gửi email cho chúng tôi</h5>
+        <div class="line--img mb-5 mt-4"><img class="img-fluid" src="./images/HOME/line.png" alt="line"></div>
+        <form action="#">
+          <input class="w-100 pl-3 pt-2 pb-2 mb-3" type="text" placeholder="Email của bạn"><span class="text-center mb-3">Gủi email để nhận những ưu đãi mới nhất</span>
+          <div class="form--btn w-100">
+            <button class="text-uppercase btn btn-dark mb-3">Giỏ hàng</button>
+          </div>
+        </form>
+      </div>
+      <div class="product--tag pb-5 pb-sm-0">
+        <h5 class="text-uppercase text-center title--content">Tag sản phẩm</h5>
+        <div class="line--img mb-5 mt-4"><img class="img-fluid" src="./images/HOME/line.png" alt="line"></div>
+        <div class="product_item--tag">
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Đồng hồ</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Túi</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Phụ kiện</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Đồng hồ</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Sandal</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Trẻ em</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Giày</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Sandal</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Áo sơ mi</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Nước hoa</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Giày</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Thời trang nữ</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Trẻ em</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Thời trang nữ</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Trẻ em</span></h5>
+            <h5><span class="badge badge-secondary p-2 mb-2 ml-2">Thời trang nữ</span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer-->
+  <!-- Navbar-item-->
+  <footer class="container-fluid p-4 pt-5">
+    <div class="container">
+      <div class="overview--info">
+        <div class="overview--item pb-4">
+          <h5 class="pb-4">Liên hệ với chúng tôi</h5>
+          <p><img src="./images/HOME/mark.png" alt="mark"> Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, p.Cống Vị, Q.Ba Đình, Hà Nội</p><span><img src="./images/HOME/telephone.png" alt="phone"> (04) 6674 2332 &nbsp;-&nbsp;<img src="./images/HOME/fax.png" alt="fax"> (04) 3786 8904</span><br><span><img src="./images/HOME/telephone.png" alt="phone"> (08) 6680 9686&nbsp;<span><img src="./images/HOME/mail.png" alt="mail"><i>&nbsp;Support@bizweb.vn</i></span></span>
+        </div>
+        <div class="overview--item pb-4 pt-4">
+          <h5 class="pb-4">Chuyển hàng</h5>
+          <ul class="pl-0">
+            <li><a href="#">Mua sắm trực tuyến</a></li>
+            <li><a href="#">Đến từ chúng tôi gữi đến</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+            <li><a href="#">Vận chuyển thông tin</a></li>
+          </ul>
+        </div>
+        <div class="overview--item pb-4 pt-4">
+          <h5 class="pb-4">Hỗ trợ</h5>
+          <ul class="pl-0">
+            <li><a href="#">Cậu chuyện của chúng ta</a></li>
+            <li><a href="#">Thanh toán an toàn</a></li>
+            <li><a href="#">Tùy chọn vận chuyển</a></li>
+            <li><a href="#">Chính sách vận chuyển</a></li>
+          </ul>
+        </div>
+        <div class="overview--item pb-4 pt-4">
+          <h5 class="pb-4">Thông tin</h5>
+          <ul class="pl-0">
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Điều khoản và điều kiện</a></li>
+            <li><a href="#">Chính sách riêng tư</a></li>
+            <li><a href="#">Đơn đặt hàng và Returns</a></li>
+          </ul>
+        </div>
+        <div class="overview--item pb-4 pt-4">
+          <h5 class="pb-4">My Account</h5>
+          <ul class="pl-0">
+            <li><a href="#">Xem giỏ hàng</a></li>
+            <li><a href="#">Sản phẩm yêu thích</a></li>
+            <li><a href="#">Kiểm tra</a></li>
+            <li><a href="#">Theo dõi đặt hàng của tôi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="further-info pt-4"><span>&copy; Copyright 2008-2014 DKT Technology JSC</span><img class="float-lg-right" src="./images/HOME/logo_pay.png" alt="Pay logo"></div>
+    </div>
+  </footer>
+</body>
+<script src="js/JSLib/bootstrap.min.js"></script>
+<script src="js/JSLib/jquery.min.js"></script>
+<script src="js/JSLib/popper.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/JSLib/owl.carousel.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/JsPages/detail.js"></script>
+<script src="js/JsPages/product.js"></script>

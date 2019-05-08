@@ -1,0 +1,9 @@
+include ./variable-data
+
+mixin blogTag(content)
+    h5
+        span.badge.badge-secondary.p-2.mb-2.ml-2= content
+
+.product_item--tag.mt-4
+    for tag in tags
+        + blogTag(tag)

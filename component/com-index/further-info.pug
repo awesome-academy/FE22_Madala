@@ -1,0 +1,87 @@
+- var contents = ['Đồng hồ', 'Túi', 'Phụ kiện', 'Đồng hồ', 'Sandal', 'Trẻ em', 'Giày', 'Sandal', 'Áo sơ mi', 'Nước hoa', 'Giày', 'Thời trang nữ', 'Trẻ em', 'Thời trang nữ', 'Trẻ em', 'Thời trang nữ']
+
+mixin tagItem(content)
+    h5
+        span.badge.badge-secondary.p-2.mb-2.ml-2= content
+
+// Further Info
+.container.further--info.pb-5
+    .social-network.pt-5
+        .social--carousel.owl-carousel.owl-theme.pb-3
+            // Item 1
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-facebook-f
+                    | &nbsp; Facebook
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-twitter
+                    | &nbsp; twitter
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-instagram
+                    | &nbsp; instagram
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-google-plus-g
+                    | &nbsp; google +
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-pinterest-p
+                    | &nbsp; pinterest
+            .item
+                span.text-center.text-uppercase
+                    i.fab.fa-linkedin-in
+                    | &nbsp; linkedin
+    .further--info--content.pt-md-5
+        .about-us.pt-5.pb-5.pt-sm-0.pb-sm-0
+            h5.text-uppercase.text-center.title--content Về chúng tôi
+            .line--img.mb-4.mt-4
+                img.img-fluid(src='./images/HOME/line.png', alt='line')
+            img.float-left(src='./images/HOME/logo.png', alt='logo')
+            h6.text-uppercase.pt-4.pb-3.title--content Giới thiệu chung về mỹ phẩm Handmade Mandala
+            p.body--content
+                | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                | Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                | Free để giải nhiệt.Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng
+                | cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                | Free để giải nhiệt.
+            a.link--content(href='#') Xem th&ecirc;m
+        .blog.pb-5.pb-sm-0
+            h5.text-uppercase.text-center.title--content blog
+            .line--img.mb-4.mt-4
+                img.img-fluid(src='./images/HOME/line.png', alt='line')
+            .img-thumbnail
+                img.img-fluid.w-100(src='./images/Blog/blog_item--img2.png', alt='Blog Image')
+            .blog--content
+                h6.text-uppercase.title--content Review son kem Bourjois velvet
+                hr
+                p
+                    | Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hăm
+                    | nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm
+                    | Free để giải nhiệt.
+                a.link--content(href='#')
+                    i Bởi NamTran (27/05/2015)
+                hr
+                a.link--content(href='#')
+                    | Đọc thêm
+                    i.fas.fa-angle-right
+                a.link--content.float-right(href='#') 23 Bình luận
+        .send-email.pb-5.pb-sm-0
+            h5.text-uppercase.text-center.title--content Gửi email cho chúng tôi
+            .line--img.mb-5.mt-4
+                img.img-fluid(src='./images/HOME/line.png', alt='line')
+            form(action='#')
+                input.w-100.pl-3.pt-2.pb-2.mb-3(type='text', placeholder='Email của bạn')
+                span.text-center.mb-3 Gủi email để nhận những ưu đãi mới nhất
+                .form--btn.w-100
+                    button.text-uppercase.btn.btn-dark.mb-3 Giỏ hàng
+        .product--tag.pb-5.pb-sm-0
+            h5.text-uppercase.text-center.title--content Tag sản phẩm
+            .line--img.mb-5.mt-4
+                img.img-fluid(src='./images/HOME/line.png', alt='line')
+            .product_item--tag
+                for content in contents
+                    + tagItem(content)

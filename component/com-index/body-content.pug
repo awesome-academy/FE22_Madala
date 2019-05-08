@@ -1,0 +1,64 @@
+mixin carouselItem(val)
+    .feedback--bg.pb-lg-5.pb-3
+        p.text-center.text-md-left.ml-md-2.mb-5
+            | "Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ
+            |  đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với
+            |  công nghệ cải tiến mới nhất, hảng Rohto"
+        .feedback_info
+            img.mr-4.mr-md-0.img-fluid(src='./images/HOME/feedback_'+val+'--img.png', alt='')
+            .title
+                h6.text-uppercase.pr-lg-1 Tutile
+                span &nbsp;_&nbsp;
+                i Giảm đốc phát trển sản phẩm
+
+mixin promotion(path, content)
+    .col-md-4.pt-sm-4.pt-4.text-center.box_info
+        img(src=''+path+'', alt='')
+        p= content
+
+// Content
+.container.pt-md-5.pt-4
+    // Promotion
+    #body--content.row
+        + promotion('./images/HOME/plane.png', 'Miễn Phí vận chuyển')
+        + promotion('./images/HOME/gift.png', 'Nhận ngay quà tặng trị giá 350.000đ')
+        + promotion('./images/HOME/star.png', 'Giảm 30% cho đơn hàng trên 5.000.000đ')
+
+    // Info With Image
+    .box_info--item.pt-sm-4.pt-4.pb-3.row
+        // Row 1
+        .box_info--item--1.pr-md-1.col-md-6.col-sm-12
+            .item--sub--1
+                a(href='#')
+                    img.img-fluid(src='./images/HOME/item-mother-1.png', alt='')
+            .item--sub--2.pt-md-2.pt-sm-2
+                a(href='#')
+                    img.img-fluid(src='./images/HOME/item-mother-2.png', alt='')
+        .box_info--item--2.pt-sm-2.pt-2.pt-md-0.pl-md-1.col-md-6.col-sm-12
+            a(href='#')
+                img.img-fluid(src='./images/HOME/item_2--right--img.jpg', alt='')
+        // Row 2
+        .box_info--item--2.pt-sm-2.pt-2.pr-md-1.col-md-6.col-sm-12
+            a(href='#')
+                img.img-fluid(src='./images/HOME/Item_3--left--img.jpg', alt='')
+        .box_info--item--1.pt-sm-2.pt-2.pl-md-1.col-md-6.col-sm-12
+            .item--sub--1
+                a(href='#')
+                    img.img-fluid(src='./images/HOME/item-mother-3.png', alt='')
+            .item--sub--2.pt-md-2.pt-sm-2
+                a(href='#')
+                    img.img-fluid(src='./images/HOME/item-mother-4.png', alt='')
+
+    // FeedBack
+    section#feedback.pt-md-4.pb-md-5
+        #demo.carousel.slide(data-ride='carousel')
+            // Indicators
+            ul.carousel-indicators
+                li.active(data-target='#demo', data-slide-to='0')
+                li(data-target='#demo', data-slide-to='1')
+            // The slideshow
+            .carousel-inner
+                .carousel-item.active
+                    + carouselItem(1)
+                .carousel-item
+                    + carouselItem(2)

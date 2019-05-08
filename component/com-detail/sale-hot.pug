@@ -1,0 +1,15 @@
+mixin saleHot
+    .product--item.mt-lg-5.pb-lg-5
+        .img-thumbnail
+            img(src='./images/Detail/hot-product.jpg', alt='Hot Product')
+        .product--info.ml-lg-3
+            h6 Mỹ phẩm châu Âu
+            img.mt-lg-3.mb-lg-2(src='./images/Detail/view_product.png', alt='View')
+            span 355.000đ
+
+// Sale Hot
+.detail_product--hot
+    h5.text-uppercase Sản phẩm bán chạy
+    each num in [1, 2, 3]
+        // Item 1
+        + saleHot

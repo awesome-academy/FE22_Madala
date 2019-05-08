@@ -1,0 +1,30 @@
+include ./variable-data
+
+mixin rowCartItem(tinhtrang, no)
+    tr
+        td.text-uppercase.text-center
+            .content--cart
+                span #1006
+        td.text-center
+            .table--item
+                span May 13, 2013
+        td.text-center
+            .table--item
+                span= tinhtrang
+        td.text-center
+            .table--item
+                span 350.000đ
+        td.text-center
+            .table--item
+                span= no
+
+h3.text-uppercase Tài khoản
+.cart--table.account--table.mb-5.mt-4
+    table.table.table-bordered.table-responsive-sm
+        thead
+            tr.text-uppercase
+                for title in arrTableTitles
+                    th.text-uppercase.text-center= title
+        tbody
+            for status in arrStatusAccounts
+                + rowCartItem(status.state, status.debt)

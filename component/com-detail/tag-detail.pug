@@ -1,0 +1,25 @@
+include ./variable-data
+
+mixin tabItemDetail(path)
+    .tab-item--sub
+        .img-thumbnail.mb-5.mb-md-0.w-100
+            img.img-fluid(src=''+path+'', alt='Product 1')
+        .tab_item--info
+            h3.text-uppercase.mb-4.title The mark of legend
+            p
+                | Tự hào được ghi là năm mà Tyffany & Co là thành lập, bộ
+                | sựu tập mang tính biểu tượng này cung cấp cho một cái gật đầu
+                | với qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                | đường cong và đường nét mượt mà.
+
+.detail_tab.pb-5.col-lg-8.col-12
+    ul.nav.nav-pills(role='tablist')
+        for tabName in tabNames
+            li.nav-item
+                a.nav-link.active.p-0.text-uppercase(data-toggle='pill', href='#home')= tabName
+    // Tab panes
+    .tab-content.mt-5
+        #home.container.tab-pane.active.p-0
+            br
+            for path in paths
+                + tabItemDetail(path)

@@ -1,0 +1,17 @@
+.form--signup.mt-4.mb-5
+    .sign-in--header
+        h3.text-uppercase Đăng Nhập
+        button.btn.btn-dark.btn_sign-in.text-uppercase Đăng ký
+    form.mt-4.p-5
+        h5.text-uppercase.mb-3 Khách hàng Đăng ký
+        span Nếu bạn có một tài khoản, xin vui lòng đăng nhập
+        .row
+            .col-lg-6
+                .form-group.mt-5
+                    label(for='email_sign-in') Địa chỉ email *
+                    input#email_sign-in.form-control(type='email', required)
+                .form-group
+                    label(for='password_sign-in') Password *
+                    input#password_sign-in.form-control(type='password', required)
+                a.sign-in_forget--password.text-capitalize.mr-5(href='#') Quên Mật Khẩu?
+                button.btn.btn-dark.btn_sign-in.text-uppercase Đăng nhập

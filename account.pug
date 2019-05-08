@@ -1,0 +1,15 @@
+extends ./layout/layout
+
+block content
+    include ./component/com-layout/navbar
+
+    .container
+        // breadcrumb
+        .container.mt-3
+            include ./component/com-account/breadcrumb-account
+
+            .row.mt-4.mb-5.account--page
+                .col-lg-9
+                    include ./component/com-account/table-account
+                .col-lg-3
+                    include ./component/com-account/info-account
