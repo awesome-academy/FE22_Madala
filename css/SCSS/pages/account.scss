@@ -51,12 +51,9 @@
   }
 }
 
-@media (max-width: 750px) {
-  .account--table {
-    .table-bordered td .table--item {
-      position: static;
-      left: 0;
-      transform: translateX(0);
-    }
+.account--table {
+  .table-bordered td .table--item {
+    position: static;
+    transform: translateX(0);
   }
 }

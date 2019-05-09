@@ -1,3 +1,5 @@
+include ./variable-data
+
 mixin carouselItem(val)
     .feedback--bg.pb-lg-5.pb-3
         p.text-center.text-md-left.ml-md-2.mb-5
@@ -20,9 +22,8 @@ mixin promotion(path, content)
 .container.pt-md-5.pt-4
     // Promotion
     #body--content.row
-        + promotion('./images/HOME/plane.png', 'Miễn Phí vận chuyển')
-        + promotion('./images/HOME/gift.png', 'Nhận ngay quà tặng trị giá 350.000đ')
-        + promotion('./images/HOME/star.png', 'Giảm 30% cho đơn hàng trên 5.000.000đ')
+        for p in promotions
+            + promotion(p.path, p.data)
 
     // Info With Image
     .box_info--item.pt-sm-4.pt-4.pb-3.row
