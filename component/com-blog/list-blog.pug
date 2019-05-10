@@ -1,7 +1,7 @@
 include ./variable-data
 
 mixin blogContentList(path)
-    .blog--content.page_blog--content
+    .blog--content.page_blog--content.mt-5
         .blog.pb-5.pb-sm-0
             .img-thumbnail.p-0
                 img.img-fluid.w-100(src=''+path+'', alt='Blog Image')
@@ -20,6 +20,6 @@ mixin blogContentList(path)
                     i.fas.fa-angle-right
                 a.link--content.float-right(href='#') 23 Bình luận
 
-.blog--show--item.mt-4
+.blog--show--item.mt-0
     for data in arrData
         + blogContentList(data)
