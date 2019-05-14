@@ -1,0 +1,56 @@
+extends ./layout/layout
+
+block append links
+    link(rel='stylesheet', href='css/CSSLib/main.css')
+    link(rel='stylesheet', href='fonts/material-design-iconic-font/css/material-design-iconic-font.css')
+
+block content
+    include ./component/com-layout/navbar
+
+    form#example-basic.mt-5.mb-5.container
+        div
+            h3
+            section
+                include ./component/com-shoppingcart/cart
+            h3
+            section
+                form
+                    .form-group
+                        label(for='name') Tên của bạn
+                        input#name.form-control.required(type='text', name='name')
+                    .form-group
+                        label(for='phone') Số điện thoại
+                        input#phone.form-control.required(type='text', name='phone')
+                    .form-group
+                        label(for='address') Địa chỉ
+                        input#address.form-control.required(type='text', name='address')
+                    .form-group
+                        label(for='note') Ghi chú
+                        textarea#note.form-control(type='text')
+            h3
+            section
+                .cart_check--info
+                    p
+                        b Tên: &nbsp;
+                        | Tran Van A
+                    p
+                        b Sdt: &nbsp;
+                        | 0905123457
+                    p
+                        b Địa chỉ: &nbsp;
+                        | Hoang Dieu
+                    p
+                        b Ghi chú: &nbsp;
+                        | SomeThing
+                    p.mb-5
+                        b Tổng Tiền: &nbsp;
+                        | 240.000
+                        sup đ
+                include ./component/com-shoppingcart/cart
+
+block append script
+    script(src='js/JsPages/payment.js')
+    script(src='js/JsPages/shopping-cart.js')
+    script(src='js/JSLib/jquery.min.js')
+    script(src='js/JSLib/jquery.steps.js')
+    script(src='js/JSLib/jquery.validate.js')

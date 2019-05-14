@@ -29,24 +29,39 @@ function getItemCart(id) {
 function renderCart() {
     let contentInfoCart = '';
     let total = 0;
+    let totalAmount = 0;
 
     if (!arrayItemCartInfo) contentInfoCart = '';
 
     else {
-        for (var item of arrayItemCartInfo) {
-            total += parseInt(item.price);
-            contentInfoCart += '<div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">\n' +
-                '      <div class="w-50"><img class="img-fluid" src="'+item.path+'" alt=""></div>\n' +
-                '      <div class="item--sub--sub--content"><span class="pl-2">'+item.titleGrid+'</span><span class="pl-2">'+item.price+'<sup>đ</sup></span></div><a href="#"><img class="cart-item--remove" value="'+item.id+'" src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>\n' +
-                '    </div>';
+        let arrItemCart = JSON.parse(localStorage.getItem("id-item--cart"));
+        if (!arrItemCart) arrItemCart = {};
+
+        if (arrItemCart) {
+            for (var idx of arrItemCart) {
+                totalAmount += idx.count;
+
+                for (var item of arrayItemCartInfo) {
+
+                    if (parseInt(idx.id) === parseInt(item.id)) {
+                        total += (parseInt(item.price) * idx.count);
+                        contentInfoCart += '<div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">\n' +
+                            '      <div class="cart_item--show w-50"><span class="badge badge-pill badge-success">'+idx.count+'</span><img class="img-fluid" src="'+item.path+'" alt=""></div>\n' +
+                            '      <div class="item--sub--sub--content"><span class="pl-2">'+item.titleGrid+'</span><span class="pl-2">'+item.price+'<sup>đ</sup></span></div><a href="#"><img class="cart-item--remove" value="'+item.id+'" src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>\n' +
+                            '    </div>';
+                    }
+                }
+            }
         }
     }
 
     let totalCart = '<span>Tổng số</span><span class="float-right">'+total+'.000<sup>đ</sup></span>';
+    let contentAmount = '<img src="./images/HOME/shoppoing-cart.png" alt=""><span class="badge badge-pill badge-success">'+totalAmount+'</span>';
 
 
     $('.total--price').html(totalCart);
     $('.cart_item--sub').html(contentInfoCart);
+    $('.show-amount-item').html(contentAmount);
 }
 
 function removeCartItem() {
@@ -72,8 +87,11 @@ function showItemCart() {
     let arrItemCart = JSON.parse(localStorage.getItem("id-item--cart"));
 
     if (arrItemCart) {
-        for (var idx of arrItemCart) {
-            getItemCart(idx.id);
+        if (arrItemCart.length <= 0) renderCart();
+        else {
+            for (var idx of arrItemCart) {
+                getItemCart(idx.id);
+            }
         }
     }
 }
@@ -85,7 +103,6 @@ async function showProducts() {
 }
 
 function addItemCart() {
-
     $(document).on('click','.btn--buy', function() {
         let countObject = JSON.parse(localStorage.getItem('id-item--cart'));
 

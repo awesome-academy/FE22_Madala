@@ -3,8 +3,9 @@ include ./variable-data
 mixin cartItem
     - var num = 0
     .cart.dropdown.pr-3.pr-md-1
-        a(href='#')
-            img.mr-lg-3(src='./images/HOME/shoppoing-cart.png', alt='')
+        a(href='#').mr-lg-3.show-amount-item
+            img(src='./images/HOME/shoppoing-cart.png', alt='')
+            span.badge.badge-pill.badge-success 0
         .dropdown-menu.w-100
             .cart_item
                 .cart_item--sub
@@ -30,11 +31,11 @@ mixin cartItem
     #collapsibleNavbar.collapse.navbar-collapse
         ul.navbar-nav.m-auto
             li.nav-item
-                a.nav-link.text-uppercase(href='#') TRANG CHỦ
+                a.nav-link.text-uppercase(href='index.html') TRANG CHỦ
             li.nav-item
-                a.nav-link.text-uppercase(href='#') GIỚI THIỆU
+                a.nav-link.text-uppercase(href='about-us.html') GIỚI THIỆU
             li.nav-item.dropdown
-                a.nav-link.text-uppercase(href='#') Sản phẩm
+                a.nav-link.text-uppercase(href='product.html') Sản phẩm
                 .dropdown-menu
                     .menu_item
                         for item in arrTitleDropDown
@@ -47,11 +48,11 @@ mixin cartItem
                                         li
                                             a(href='#')= itemSub
             li.nav-item
-                a.nav-link.text-uppercase(href='#') tin tức
+                a.nav-link.text-uppercase(href='blog.html') tin tức
             li.nav-item
-                a.nav-link.text-uppercase(href='#') bản đồ
+                a.nav-link.text-uppercase(href='contact.html') bản đồ
             li.nav-item
-                a.nav-link.text-uppercase(href='#') liên hệ
+                a.nav-link.text-uppercase(href='contact.html') liên hệ
     // Shopping cart and Search
     #manager--tool--2.img--tool
         + cartItem

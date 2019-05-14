@@ -41,5 +41,8 @@ body {
   @import "./pages/404";
 
   //Modal
-  @import "component/modal";
+  @import "./component/modal";
+
+  // Payment
+  @import "./pages/payment";
 }

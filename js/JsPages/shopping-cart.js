@@ -37,6 +37,7 @@ function changeValueInput() {
 
         arrayTablePages = [];
         showTableItemCart();
+        showInfoCheck();
     });
 }
 
@@ -59,6 +60,7 @@ function loadCartTable(id) {
 function layoutTable() {
     let content = '';
     let countProducts = JSON.parse(localStorage.getItem('id-item--cart'));
+    let total = 0;
 
     for (let c of countProducts) {
         for (let d of arrayTablePages) {
@@ -83,9 +85,12 @@ function layoutTable() {
                     '                  <div class="table--item text-center"><img data--id="'+c.id+'" class="item_icon--remove" src="./images/Shopping-cart/remove--icon.png" alt="remove-icon"></div>\n' +
                     '                </td>\n' +
                     '              </tr>';
+
+                total += (c.count * d.price);
             }
         }
     }
+    localStorage.setItem('total-price', JSON.stringify(total));
 
     $('.tinfo_cart').html(content);
 }
