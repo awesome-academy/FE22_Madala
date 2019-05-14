@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEI,qCAA2B;EACzB,aAAa,EAAE,4BAAwB;AADzC,qCAA2B;EACzB,aAAa,EAAE,4BAAwB;AAI3C,yBAA0B;EAEtB,qCAA2B;IACzB,aAAa,EAAE,IAAI;IACnB,MAAM,EAAE,IAAI;IACZ,YAAY,EAAE,4BAAwB;EAHxC,qCAA2B;IACzB,aAAa,EAAE,IAAI;IACnB,MAAM,EAAE,IAAI;IACZ,YAAY,EAAE,4BAAwB",
-"sources": ["promotion.scss"],
-"names": [],
-"file": "promotion.css"
-}

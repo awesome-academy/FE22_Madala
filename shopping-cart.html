@@ -24,23 +24,11 @@
             <div class="cart dropdown pr-3 pr-md-1"><a href="#"><img class="mr-lg-3" src="./images/HOME/shoppoing-cart.png" alt=""></a>
               <div class="dropdown-menu w-100">
                 <div class="cart_item">
-                  <!-- show detail item-->
-                  <div class="cart_item--sub">
-                    <!-- Item 1-->
-                    <div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">
-                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
-                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
-                    </div>
-                    <!-- Item 1-->
-                    <div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">
-                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
-                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
-                    </div>
-                  </div>
+                  <div class="cart_item--sub"></div>
                   <hr>
                   <!-- Total price in cart-->
-                  <div class="total--price"><span>Tổng số</span><span class="float-right">240.000<sup>đ</sup></span></div>
-                  <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button>
+                  <div class="total--price"></div><a href="shopping-cart.html">
+                    <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button></a>
                 </div>
               </div>
             </div><a href="#"><img src="./images/HOME/btn-search.png" alt=""></a>
@@ -113,23 +101,11 @@
             <div class="cart dropdown pr-3 pr-md-1"><a href="#"><img class="mr-lg-3" src="./images/HOME/shoppoing-cart.png" alt=""></a>
               <div class="dropdown-menu w-100">
                 <div class="cart_item">
-                  <!-- show detail item-->
-                  <div class="cart_item--sub">
-                    <!-- Item 1-->
-                    <div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">
-                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
-                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
-                    </div>
-                    <!-- Item 1-->
-                    <div class="item--sub--sub mt-lg-1 pt-lg-1 mt-2">
-                      <div class="img-fluid"><img src="./images/HOME/shoppoing-cart_product.jpg" alt=""></div>
-                      <div class="item--sub--sub--content"><span class="pl-2">Áo sơ mi Nam</span><span class="pl-2">120.000<sup>đ</sup></span></div><a href="#"><img src="./images/HOME/shopping-cart--icon--remove.png" alt=""></a>
-                    </div>
-                  </div>
+                  <div class="cart_item--sub"></div>
                   <hr>
                   <!-- Total price in cart-->
-                  <div class="total--price"><span>Tổng số</span><span class="float-right">240.000<sup>đ</sup></span></div>
-                  <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button>
+                  <div class="total--price"></div><a href="shopping-cart.html">
+                    <button class="text-uppercase btn btn-dark mb-3 mt-2">Giỏ hàng</button></a>
                 </div>
               </div>
             </div><a href="#"><img src="./images/HOME/btn-search.png" alt=""></a>
@@ -161,53 +137,12 @@
             <th class="text-uppercase text-center">Xóa</th>
           </tr>
         </thead>
-        <tbody>
-              <tr>
-                <td class="text-center"><img class="img-fluid" src="./images/Shopping-cart/cart_product--1.jpg" alt="product-bought"></td>
-                <td class="text-uppercase text-center">
-                  <div class="table--item content--cart"><span>Lắc tay D&B</span></div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item"><span>345.000đ</span></div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item">
-                    <input type="number" value="1">
-                  </div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item"><span>345.000đ</span></div>
-                </td>
-                <td>
-                  <div class="table--item text-center"><img src="./images/Shopping-cart/remove--icon.png" alt="remove-icon"></div>
-                </td>
-              </tr>
-              <tr>
-                <td class="text-center"><img class="img-fluid" src="./images/Shopping-cart/cart_product--1.jpg" alt="product-bought"></td>
-                <td class="text-uppercase text-center">
-                  <div class="table--item content--cart"><span>Lắc tay D&B</span></div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item"><span>345.000đ</span></div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item">
-                    <input type="number" value="1">
-                  </div>
-                </td>
-                <td class="text-center">
-                  <div class="table--item"><span>345.000đ</span></div>
-                </td>
-                <td>
-                  <div class="table--item text-center"><img src="./images/Shopping-cart/remove--icon.png" alt="remove-icon"></div>
-                </td>
-              </tr>
-        </tbody>
+        <tbody class="tinfo_cart"></tbody>
       </table>
-      <div class="cart_btn text-uppercase">
-        <div class="btn btn-dark">Tiếp tục mua hàng</div>
+      <div class="cart_btn text-uppercase"><a href="product.html">
+          <div class="btn btn-dark">Tiếp tục mua hàng</div></a>
         <div class="btn btn-dark">Xóa</div>
-        <div class="btn btn-dark">Cập nhật</div>
+        <div class="btn btn-dark btn--update">Cập nhật</div>
       </div>
     </div>
   </div>
@@ -267,7 +202,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/JSLib/owl.carousel.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/JsPages/detail.js"></script>
-<script src="js/JsPages/product.js"></script>
+<script src="js/JSCommon/nav_cart.js"></script>
+<script src="js/JsPages/shopping-cart.js"></script>

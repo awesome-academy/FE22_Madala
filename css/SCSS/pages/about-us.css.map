@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIE,2BAAe;EACb,aAAa,EAAE,CAAC;EAChB,MAAM,EAAE,IAAI;AAGd,eAAG;EACD,WAAW,EAAE,GAAG;AAGlB,cAAE;EACA,KAAK,EAAE,OAAO;ECLd,SAAI,EDMa,MAAK;ECLtB,WAAM,EDKkB,GAAG;AAG7B,cAAE;EACA,KAAK,EAAE,OAAO;ECVd,SAAI,EDWa,MAAK;ECVtB,WAAM,EDUkB,GAAG",
-"sources": ["about-us.scss","../common/mixin.scss"],
-"names": [],
-"file": "about-us.css"
-}

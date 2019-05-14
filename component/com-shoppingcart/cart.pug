@@ -1,25 +1,5 @@
 include ./variable-data
 
-mixin rowCartItem
-    tr
-        td.text-center
-            img.img-fluid(src="./images/Shopping-cart/cart_product--1.jpg", alt="product-bought")
-        td.text-uppercase.text-center
-            .table--item.content--cart
-                span Lắc tay D&B
-        td.text-center
-            .table--item
-                span 345.000đ
-        td.text-center
-            .table--item
-                input(type='number', value=1)
-        td.text-center
-            .table--item
-                span 345.000đ
-        td
-            .table--item.text-center
-                img(src='./images/Shopping-cart/remove--icon.png', alt="remove-icon")
-
 h3.text-uppercase.mt-3.mb-3 Giỏ hàng
 .cart--table.mb-5
     table.table.table-bordered.table-responsive-sm
@@ -27,10 +7,9 @@ h3.text-uppercase.mt-3.mb-3 Giỏ hàng
             tr
                 for title in arrTableTitles
                     th.text-uppercase.text-center= title
-        tbody
-            each num in [1, 2]
-                + rowCartItem
+        tbody.tinfo_cart
     .cart_btn.text-uppercase
-        .btn.btn-dark Tiếp tục mua hàng
+        a(href='product.html')
+            .btn.btn-dark Tiếp tục mua hàng
         .btn.btn-dark Xóa
-        .btn.btn-dark Cập nhật
+        .btn.btn-dark.btn--update Cập nhật
