@@ -139,8 +139,11 @@ nav {
 
       .item--sub--sub {
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: .6rem;
+        grid-template-columns: 3fr 2fr 1fr;
+
+        a {
+          text-align: center;
+        }
 
         .item--sub--sub--content span {
 

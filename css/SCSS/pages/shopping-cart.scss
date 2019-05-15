@@ -15,7 +15,7 @@
       border: none;
       cursor: pointer;
 
-      &:last-child {
+      &.btn--update {
         background-color: $dropdown_item--hover;
       }
     }
@@ -39,14 +39,7 @@
 
   td {
     @include setSize(.8rem, 600);
-    position: relative;
-
-    .table--item {
-      position: absolute;
-      top: 45%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+    vertical-align: middle;
 
     .table--item > input {
       width: 30px;
