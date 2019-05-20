@@ -141,6 +141,15 @@ nav {
         display: grid;
         grid-template-columns: 3fr 2fr 1fr;
 
+        .cart_item--show {
+          position: relative;
+
+          span {
+            position: absolute;
+            left: 85%;
+          }
+        }
+
         a {
           text-align: center;
         }

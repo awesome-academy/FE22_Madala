@@ -37,6 +37,8 @@ $(document).ready(function () {
             localStorage.removeItem('customer');
             localStorage.removeItem('id-item--cart');
             localStorage.removeItem('total-price');
+
+            location.href = "/FE22_Madala/payment.html";
         }
     });
 
@@ -53,6 +55,8 @@ $(document).ready(function () {
 function showInfoCheck() {
     let dataCheck = JSON.parse(localStorage.getItem('customer'));
     let total = JSON.parse(localStorage.getItem('total-price'));
+
+    if(!dataCheck.note) dataCheck.note = 'Không có ghi chú nào !!';
 
     let content = '<p><b>Tên: &nbsp;</b>'+dataCheck.name+'</p>\n' +
         '        <p><b>Sdt: &nbsp;</b>'+dataCheck.phone+'</p>\n' +
