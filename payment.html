@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="css/CSSLib/font-extention.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/CSSLib/main.css">
+<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 <body>
   <!-- Navbar section-->
   <nav class="navbar navbar-expand-md nav--not--index">
@@ -112,33 +114,82 @@
       </div>
     </div>
   </nav>
-  <div class="container">
-    <!-- breadcrumb-->
-    <div class="container mt-3">
-      <nav class="breadcrumb--custom" aria-label="breadcrumb">
-        <ol class="breadcrumb pl-0 pb-0">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Về chúng tôi</li>
-        </ol>
-      </nav>
-      <div class="about-us mt-4 mb-5">
-        <h3 class="text-uppercase">Về chúng tôi</h3>
-        <div class="about--info row">
-          <div class="col-lg-6 img-thumbnail mb-4"><img class="img-fluid" src="./images/AboutUs/about--img.jpg"></div>
-          <div class="col-lg-6"><img src="./images/HOME/logo.png">
-            <h6 class="mt-4 mb-3 text-uppercase">Giới thiệu chung về mỹ phẫm Handmade Mandala</h6>
-            <p>
-              Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này&nbsp;vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
-              Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này
-              vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Sau khá nhiều lời hứa
-              hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tăm Free
-              để giải nhiệt.
-            </p><a href="#">Xem thêm</a>
-          </div>
+  <form class="mt-5 mb-5 container" id="example-basic">
+    <div>
+      <h3></h3>
+      <section>
+        <!-- Table titles-->
+        <h3 class="text-uppercase mt-3 mb-3">Giỏ hàng</h3>
+        <div class="cart--table mb-5">
+          <table class="table table-bordered table-responsive-sm">
+            <thead>
+              <tr>
+                <th class="text-uppercase text-center">Ảnh</th>
+                <th class="text-uppercase text-center">Tên sản phẩm</th>
+                <th class="text-uppercase text-center">Giá</th>
+                <th class="text-uppercase text-center">Số lượng</th>
+                <th class="text-uppercase text-center">Tổng số</th>
+                <th class="text-uppercase text-center">Xóa</th>
+              </tr>
+            </thead>
+            <tbody class="tinfo_cart"></tbody>
+          </table>
+          <div class="cart_btn text-uppercase"><a href="product.html">
+              <div class="btn btn-dark">Tiếp tục mua hàng</div></a></div>
         </div>
-      </div>
+      </section>
+      <h3></h3>
+      <section>
+        <form>
+          <div class="form-group">
+            <label for="name">Tên của bạn</label>
+            <input class="form-control required" id="name" type="text" name="name">
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input class="form-control required" id="phone" type="text" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="address">Địa chỉ</label>
+            <input class="form-control required" id="address" type="text" name="address">
+          </div>
+          <div class="form-group">
+            <label for="note">Ghi chú</label>
+            <textarea class="form-control" id="note" type="text"></textarea>
+          </div>
+        </form>
+      </section>
+      <h3></h3>
+      <section>
+        <div class="cart_check--info">
+          <p><b>Tên: &nbsp;</b>Tran Van A</p>
+          <p><b>Sdt: &nbsp;</b>0905123457</p>
+          <p><b>Địa chỉ: &nbsp;</b>Hoang Dieu</p>
+          <p><b>Ghi chú: &nbsp;</b>SomeThing</p>
+          <p class="mb-5"><b>Tổng Tiền: &nbsp;</b>240.000<sup>đ</sup></p>
+        </div>
+        <!-- Table titles-->
+        <h3 class="text-uppercase mt-3 mb-3">Giỏ hàng</h3>
+        <div class="cart--table mb-5">
+          <table class="table table-bordered table-responsive-sm">
+            <thead>
+              <tr>
+                <th class="text-uppercase text-center">Ảnh</th>
+                <th class="text-uppercase text-center">Tên sản phẩm</th>
+                <th class="text-uppercase text-center">Giá</th>
+                <th class="text-uppercase text-center">Số lượng</th>
+                <th class="text-uppercase text-center">Tổng số</th>
+                <th class="text-uppercase text-center">Xóa</th>
+              </tr>
+            </thead>
+            <tbody class="tinfo_cart"></tbody>
+          </table>
+          <div class="cart_btn text-uppercase"><a href="product.html">
+              <div class="btn btn-dark">Tiếp tục mua hàng</div></a></div>
+        </div>
+      </section>
     </div>
-  </div>
+  </form>
   <!-- Footer-->
   <!-- Navbar-item-->
   <footer class="container-fluid p-4 pt-5">
@@ -198,3 +249,8 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/JSLib/owl.carousel.min.js"></script>
 <script src="js/JSCommon/nav_cart.js"></script>
+<script src="js/JsPages/payment.js"></script>
+<script src="js/JsPages/shopping-cart.js"></script>
+<script src="js/JSLib/jquery.min.js"></script>
+<script src="js/JSLib/jquery.steps.js"></script>
+<script src="js/JSLib/jquery.validate.js"></script>

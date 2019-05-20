@@ -48,6 +48,12 @@
     &:nth-child(3), &:nth-child(5) {
       font-family: $font--lobster;
     }
+
+    &:last-child {
+      img {
+        cursor: pointer;
+      }
+    }
   }
 }
 
