@@ -175,6 +175,13 @@ body .img--tool .cart .cart_item--sub .item--sub--sub {
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
 }
+body .img--tool .cart .cart_item--sub .item--sub--sub .cart_item--show {
+  position: relative;
+}
+body .img--tool .cart .cart_item--sub .item--sub--sub .cart_item--show span {
+  position: absolute;
+  left: 85%;
+}
 body .img--tool .cart .cart_item--sub .item--sub--sub a {
   text-align: center;
 }
