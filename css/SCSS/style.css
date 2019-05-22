@@ -1560,6 +1560,9 @@ body #example-basic section:last-child h3 {
 body #example-basic .error {
   color: #c72527;
 }
+body #example-basic .btn.btn--update {
+  display: none;
+}
 body .wizard > .steps .current-info, body .wizard > .steps .number {
   display: none;
 }
