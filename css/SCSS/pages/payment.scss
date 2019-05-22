@@ -10,6 +10,10 @@
   .error {
     color: #c72527;
   }
+
+  .btn.btn--update {
+    display: none;
+  }
 }
 
 .wizard > .steps .current-info, .wizard > .steps .number {
